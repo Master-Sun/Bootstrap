@@ -1,0 +1,126 @@
+img {
+    display: block;    /* 将图片设置成块元素，方便调整大小？ */
+    max-width: 100%;    /* 填满父级块元素 */
+    border-radius: 3px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.navbar-brand {
+    background-image: url(../img/logo.png);
+    width: 50px;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.side-bar .list-group-item {
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* .active是什么意思？怎么搞的？ */
+.side-bar .list-group-item.active {
+    background-color: #e71313;
+}
+
+.news-list-item {
+    padding-bottom: 10px;        /* 设置padding方便设置分割线 */
+    padding-top: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.news-list-item:first-child {
+    padding-top: 0;
+}
+
+.news-list-item .title {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.5;                /* 行高 */
+    color: #444;
+}
+
+.news-list-item .title:hover {
+    color: #337ab7;        /* 标题在鼠标悬停时变色 */
+}
+
+.news-list-item .info {
+    color: #888;
+}
+
+.avatar {
+    display: inline-block;
+}
+
+.avatar img {
+    display: inline-block;
+    width: 15px;
+    margin-right: 5px;
+}
+
+.side-bar-card {
+    background: rgba(0,0,0,0.05);        /* 设置透明度,表现为浅灰色 */
+    margin-top: 15px;
+    padding: 10px 0;
+}
+
+.side-bar-card .text-lg {
+    font-size: 140%;
+}
+
+.side-bar-card .card-title,
+.side-bar-card .card-body .list .item{
+    padding: 15px;
+}
+
+.side-bar-card .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.side-bar-card .card-body .list .item:hover {
+    background: rgba(0,0,0,.05);
+}
+
+.side-bar-card .card-body .desc {
+    color: #999;
+    padding-top: 5px;
+}
+
+.container-small {
+    max-width: 500px;
+}
+
+.btn-primary {
+    background-color: #e71313;
+    border-color: #e71313;
+}
+
+.btn-primary:hover {
+    background-color: #d50c37;
+    border-color: #d50c37;
+}
+
+/* ~p~ul选择器： p之后出现的所有ul。两种元素必须拥有相同的父元素，但是 ul不必直接紧随 p。 */
+#toggle-checkbox:checked ~ div {
+    display: block !important;
+}
+
+#toggle-label {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    color: #666;
+}
+
+#toggle-label:hover {
+    color: #333;
+}
